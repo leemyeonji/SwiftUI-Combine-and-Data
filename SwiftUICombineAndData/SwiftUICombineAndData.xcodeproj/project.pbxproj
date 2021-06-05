@@ -22,6 +22,10 @@
 		C6C43F6A266B609700092168 /* PackageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F69266B609700092168 /* PackageRow.swift */; };
 		C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F6B266B6B6000092168 /* FAQ.swift */; };
 		C6C43F6F266B6BB600092168 /* faqData.json in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F6E266B6BB600092168 /* faqData.json */; };
+		C6C43F72266B6D2E00092168 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F71266B6D2E00092168 /* ModelData.swift */; };
+		C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F73266B6F7D00092168 /* FAQRow.swift */; };
+		C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F76266B793900092168 /* PrimaryButton.swift */; };
+		C6C43F79266B7AD700092168 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F78266B7AD700092168 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		C6C43F69266B609700092168 /* PackageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageRow.swift; sourceTree = "<group>"; };
 		C6C43F6B266B6B6000092168 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		C6C43F6E266B6BB600092168 /* faqData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faqData.json; sourceTree = "<group>"; };
+		C6C43F71266B6D2E00092168 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		C6C43F73266B6F7D00092168 /* FAQRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRow.swift; sourceTree = "<group>"; };
+		C6C43F76266B793900092168 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		C6C43F78266B7AD700092168 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 			children = (
 				C6C43F58266B424100092168 /* MenuRow.swift */,
 				C6C43F69266B609700092168 /* PackageRow.swift */,
+				C6C43F73266B6F7D00092168 /* FAQRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -136,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C6C43F56266B358F00092168 /* TrackableScrollView.swift */,
+				C6C43F71266B6D2E00092168 /* ModelData.swift */,
+				C6C43F78266B7AD700092168 /* Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 		C6C43F60266B4E7B00092168 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C6C43F75266B792400092168 /* Buttons */,
 				C6C43F5E266B4E6500092168 /* Others */,
 				C6C43F5D266B4E5D00092168 /* Rows */,
 			);
@@ -164,6 +176,14 @@
 				C6C43F6E266B6BB600092168 /* faqData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6C43F75266B792400092168 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C6C43F76266B793900092168 /* PrimaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,15 +257,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
+				C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */,
 				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
 				C6C43F45266B328B00092168 /* ContentView.swift in Sources */,
+				C6C43F72266B6D2E00092168 /* ModelData.swift in Sources */,
 				C6C43F6A266B609700092168 /* PackageRow.swift in Sources */,
 				C6C43F62266B4EAE00092168 /* FAQView.swift in Sources */,
+				C6C43F79266B7AD700092168 /* Extension.swift in Sources */,
 				C6C43F64266B4EC800092168 /* PackagesView.swift in Sources */,
 				C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */,
 				C6C43F67266B603200092168 /* Package.swift in Sources */,
 				C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */,
 				C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */,
+				C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */,
 				C6C43F54266B343100092168 /* AccountBackground.swift in Sources */,
 				C6C43F59266B424100092168 /* MenuRow.swift in Sources */,
 			);
