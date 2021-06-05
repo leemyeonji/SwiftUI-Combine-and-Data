@@ -18,6 +18,10 @@
 		C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F5A266B43C500092168 /* GradientIcon.swift */; };
 		C6C43F62266B4EAE00092168 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F61266B4EAE00092168 /* FAQView.swift */; };
 		C6C43F64266B4EC800092168 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F63266B4EC800092168 /* PackagesView.swift */; };
+		C6C43F67266B603200092168 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F66266B603100092168 /* Package.swift */; };
+		C6C43F6A266B609700092168 /* PackageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F69266B609700092168 /* PackageRow.swift */; };
+		C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F6B266B6B6000092168 /* FAQ.swift */; };
+		C6C43F6F266B6BB600092168 /* faqData.json in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F6E266B6BB600092168 /* faqData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		C6C43F5A266B43C500092168 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
 		C6C43F61266B4EAE00092168 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		C6C43F63266B4EC800092168 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
+		C6C43F66266B603100092168 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C6C43F69266B609700092168 /* PackageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageRow.swift; sourceTree = "<group>"; };
+		C6C43F6B266B6B6000092168 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		C6C43F6E266B6BB600092168 /* faqData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faqData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,8 @@
 		C6C43F41266B328B00092168 /* SwiftUICombineAndData */ = {
 			isa = PBXGroup;
 			children = (
+				C6C43F6D266B6B9300092168 /* Resources */,
+				C6C43F65266B602400092168 /* Model */,
 				C6C43F60266B4E7B00092168 /* Component */,
 				C6C43F5F266B4E7000092168 /* Utility */,
 				C6C43F5C266B4E5200092168 /* Views */,
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				C6C43F58266B424100092168 /* MenuRow.swift */,
+				C6C43F69266B609700092168 /* PackageRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -136,6 +147,23 @@
 				C6C43F5D266B4E5D00092168 /* Rows */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		C6C43F65266B602400092168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6C43F66266B603100092168 /* Package.swift */,
+				C6C43F6B266B6B6000092168 /* FAQ.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6C43F6D266B6B9300092168 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6C43F6E266B6BB600092168 /* faqData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +225,7 @@
 			files = (
 				C6C43F4A266B328F00092168 /* Preview Assets.xcassets in Resources */,
 				C6C43F47266B328F00092168 /* Assets.xcassets in Resources */,
+				C6C43F6F266B6BB600092168 /* faqData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +239,12 @@
 				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
 				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
 				C6C43F45266B328B00092168 /* ContentView.swift in Sources */,
+				C6C43F6A266B609700092168 /* PackageRow.swift in Sources */,
 				C6C43F62266B4EAE00092168 /* FAQView.swift in Sources */,
 				C6C43F64266B4EC800092168 /* PackagesView.swift in Sources */,
 				C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */,
+				C6C43F67266B603200092168 /* Package.swift in Sources */,
+				C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */,
 				C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */,
 				C6C43F54266B343100092168 /* AccountBackground.swift in Sources */,
 				C6C43F59266B424100092168 /* MenuRow.swift in Sources */,
