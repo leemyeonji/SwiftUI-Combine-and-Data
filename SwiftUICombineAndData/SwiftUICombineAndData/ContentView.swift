@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .top) {
+                
                 TrackableScrollView(offsetChanged: { offset in
                     contentOffset = offset.y
                 }) {
@@ -35,6 +36,7 @@ struct ContentView: View {
     
     var content: some View {
         VStack {
+            ProfileRow()
             VStack {
                 NavigationLink(destination: FAQView()) {
                     MenuRow()
@@ -50,11 +52,7 @@ struct ContentView: View {
                 }
                 
             }
-            .padding(16)
-            .background(Color("Background 1"))
-            .background(VisualEffectBlur(blurStyle: .systemUltraThinMaterialDark))
-            .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.white, lineWidth: 1).blendMode(.overlay))
-            .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            blurBackground()
             .padding(.top, 20)
             
             Text("Version 1.00")

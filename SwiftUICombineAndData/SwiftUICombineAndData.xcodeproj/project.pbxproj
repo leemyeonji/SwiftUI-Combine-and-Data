@@ -26,6 +26,7 @@
 		C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F73266B6F7D00092168 /* FAQRow.swift */; };
 		C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F76266B793900092168 /* PrimaryButton.swift */; };
 		C6C43F79266B7AD700092168 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F78266B7AD700092168 /* Extension.swift */; };
+		C6C43F7B266B95F100092168 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F7A266B95F000092168 /* ProfileRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C6C43F73266B6F7D00092168 /* FAQRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRow.swift; sourceTree = "<group>"; };
 		C6C43F76266B793900092168 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		C6C43F78266B7AD700092168 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C6C43F7A266B95F000092168 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				C6C43F58266B424100092168 /* MenuRow.swift */,
 				C6C43F69266B609700092168 /* PackageRow.swift */,
 				C6C43F73266B6F7D00092168 /* FAQRow.swift */,
+				C6C43F7A266B95F000092168 /* ProfileRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				C6C43F62266B4EAE00092168 /* FAQView.swift in Sources */,
 				C6C43F79266B7AD700092168 /* Extension.swift in Sources */,
 				C6C43F64266B4EC800092168 /* PackagesView.swift in Sources */,
+				C6C43F7B266B95F100092168 /* ProfileRow.swift in Sources */,
 				C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */,
 				C6C43F67266B603200092168 /* Package.swift in Sources */,
 				C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */,
