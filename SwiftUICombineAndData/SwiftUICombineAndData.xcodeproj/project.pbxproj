@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */; };
-		C6C43F45266B328B00092168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F44266B328B00092168 /* ContentView.swift */; };
+		C6C43F45266B328B00092168 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F44266B328B00092168 /* MainView.swift */; };
 		C6C43F47266B328F00092168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F46266B328F00092168 /* Assets.xcassets */; };
 		C6C43F4A266B328F00092168 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F49266B328F00092168 /* Preview Assets.xcassets */; };
 		C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F51266B343000092168 /* VisualEffectBlur.swift */; };
@@ -27,12 +27,14 @@
 		C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F76266B793900092168 /* PrimaryButton.swift */; };
 		C6C43F79266B7AD700092168 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F78266B7AD700092168 /* Extension.swift */; };
 		C6C43F7B266B95F100092168 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F7A266B95F000092168 /* ProfileRow.swift */; };
+		C6F46414266BB68D008E3201 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6F46413266BB68D008E3201 /* FirebaseFirestore */; };
+		C6F46416266BBD37008E3201 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F46415266BBD37008E3201 /* GoogleService-Info .plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6C43F3F266B328B00092168 /* SwiftUICombineAndData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombineAndData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineAndDataApp.swift; sourceTree = "<group>"; };
-		C6C43F44266B328B00092168 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6C43F44266B328B00092168 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C6C43F46266B328F00092168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6C43F49266B328F00092168 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6C43F4B266B328F00092168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		C6C43F76266B793900092168 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		C6C43F78266B7AD700092168 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C6C43F7A266B95F000092168 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		C6F46415266BBD37008E3201 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F46414266BB68D008E3201 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +95,10 @@
 				C6C43F5C266B4E5200092168 /* Views */,
 				C6C43F55266B343900092168 /* Graphics */,
 				C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */,
-				C6C43F44266B328B00092168 /* ContentView.swift */,
+				C6C43F44266B328B00092168 /* MainView.swift */,
 				C6C43F46266B328F00092168 /* Assets.xcassets */,
 				C6C43F4B266B328F00092168 /* Info.plist */,
+				C6F46415266BBD37008E3201 /* GoogleService-Info .plist */,
 				C6C43F48266B328F00092168 /* Preview Content */,
 			);
 			path = SwiftUICombineAndData;
@@ -205,6 +210,9 @@
 			dependencies = (
 			);
 			name = SwiftUICombineAndData;
+			packageProductDependencies = (
+				C6F46413266BB68D008E3201 /* FirebaseFirestore */,
+			);
 			productName = SwiftUICombineAndData;
 			productReference = C6C43F3F266B328B00092168 /* SwiftUICombineAndData.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +240,9 @@
 				Base,
 			);
 			mainGroup = C6C43F36266B328B00092168;
+			packageReferences = (
+				C6F46412266BB68D008E3201 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C6C43F40266B328B00092168 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +259,7 @@
 			files = (
 				C6C43F4A266B328F00092168 /* Preview Assets.xcassets in Resources */,
 				C6C43F47266B328F00092168 /* Assets.xcassets in Resources */,
+				C6F46416266BBD37008E3201 /* GoogleService-Info .plist in Resources */,
 				C6C43F6F266B6BB600092168 /* faqData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +274,7 @@
 				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
 				C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */,
 				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
-				C6C43F45266B328B00092168 /* ContentView.swift in Sources */,
+				C6C43F45266B328B00092168 /* MainView.swift in Sources */,
 				C6C43F72266B6D2E00092168 /* ModelData.swift in Sources */,
 				C6C43F6A266B609700092168 /* PackageRow.swift in Sources */,
 				C6C43F62266B4EAE00092168 /* FAQView.swift in Sources */,
@@ -407,12 +419,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICombineAndData/Preview Content\"";
 				DEVELOPMENT_TEAM = 2V4PX8GFFW;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				INFOPLIST_FILE = SwiftUICombineAndData/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = leemyeonji.SwiftUICombineAndData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -464,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6F46412266BB68D008E3201 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6F46413266BB68D008E3201 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6F46412266BB68D008E3201 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6C43F37266B328B00092168 /* Project object */;
 }

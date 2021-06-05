@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @State private var contentOffset = CGFloat(0)
     
@@ -41,14 +41,19 @@ struct ContentView: View {
                 NavigationLink(destination: FAQView()) {
                     MenuRow()
                 }
+                
                 divider
+                
                 NavigationLink(destination: PackagesView()) {
                     MenuRow(title: "SwiftUI Packages", leftIcon: "square.stack.3d.up.fill")
                 }
+                
                 divider
                 
                 Link(destination: URL(string: "https://www.apple.com")!) {
-                    MenuRow(title: "Youtube Channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+                    MenuRow(title: "Youtube Channel",
+                            leftIcon: "play.rectangle.fill",
+                            rightIcon: "link")
                 }
                 
             }
@@ -74,6 +79,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
