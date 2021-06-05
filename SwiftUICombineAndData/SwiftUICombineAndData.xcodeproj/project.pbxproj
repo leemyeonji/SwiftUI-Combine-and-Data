@@ -11,6 +11,9 @@
 		C6C43F45266B328B00092168 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F44266B328B00092168 /* ContentView.swift */; };
 		C6C43F47266B328F00092168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F46266B328F00092168 /* Assets.xcassets */; };
 		C6C43F4A266B328F00092168 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F49266B328F00092168 /* Preview Assets.xcassets */; };
+		C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F51266B343000092168 /* VisualEffectBlur.swift */; };
+		C6C43F54266B343100092168 /* AccountBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F52266B343100092168 /* AccountBackground.swift */; };
+		C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F56266B358F00092168 /* TrackableScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		C6C43F46266B328F00092168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6C43F49266B328F00092168 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6C43F4B266B328F00092168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C43F51266B343000092168 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisualEffectBlur.swift; path = "../New Group/VisualEffectBlur.swift"; sourceTree = "<group>"; };
+		C6C43F52266B343100092168 /* AccountBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBackground.swift; sourceTree = "<group>"; };
+		C6C43F56266B358F00092168 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,10 @@
 		C6C43F41266B328B00092168 /* SwiftUICombineAndData */ = {
 			isa = PBXGroup;
 			children = (
+				C6C43F55266B343900092168 /* Graphics */,
 				C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */,
 				C6C43F44266B328B00092168 /* ContentView.swift */,
+				C6C43F56266B358F00092168 /* TrackableScrollView.swift */,
 				C6C43F46266B328F00092168 /* Assets.xcassets */,
 				C6C43F4B266B328F00092168 /* Info.plist */,
 				C6C43F48266B328F00092168 /* Preview Content */,
@@ -67,6 +75,15 @@
 				C6C43F49266B328F00092168 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6C43F55266B343900092168 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				C6C43F52266B343100092168 /* AccountBackground.swift */,
+				C6C43F51266B343000092168 /* VisualEffectBlur.swift */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
+				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
 				C6C43F45266B328B00092168 /* ContentView.swift in Sources */,
 				C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */,
+				C6C43F54266B343100092168 /* AccountBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
