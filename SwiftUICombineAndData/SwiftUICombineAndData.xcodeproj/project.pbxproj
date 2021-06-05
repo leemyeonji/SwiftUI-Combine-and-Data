@@ -29,6 +29,8 @@
 		C6C43F7B266B95F100092168 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F7A266B95F000092168 /* ProfileRow.swift */; };
 		C6F46414266BB68D008E3201 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6F46413266BB68D008E3201 /* FirebaseFirestore */; };
 		C6F46416266BBD37008E3201 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F46415266BBD37008E3201 /* GoogleService-Info .plist */; };
+		C6F46418266BBE8A008E3201 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F46417266BBE8A008E3201 /* Certificate.swift */; };
+		C6F4641B266BC1C1008E3201 /* CertificatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4641A266BC1C1008E3201 /* CertificatesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		C6C43F78266B7AD700092168 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C6C43F7A266B95F000092168 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		C6F46415266BBD37008E3201 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
+		C6F46417266BBE8A008E3201 /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
+		C6F4641A266BC1C1008E3201 /* CertificatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		C6C43F41266B328B00092168 /* SwiftUICombineAndData */ = {
 			isa = PBXGroup;
 			children = (
+				C6F46419266BC1B0008E3201 /* ViewModel */,
 				C6C43F6D266B6B9300092168 /* Resources */,
 				C6C43F65266B602400092168 /* Model */,
 				C6C43F60266B4E7B00092168 /* Component */,
@@ -174,6 +179,7 @@
 			children = (
 				C6C43F66266B603100092168 /* Package.swift */,
 				C6C43F6B266B6B6000092168 /* FAQ.swift */,
+				C6F46417266BBE8A008E3201 /* Certificate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +198,14 @@
 				C6C43F76266B793900092168 /* PrimaryButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C6F46419266BC1B0008E3201 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4641A266BC1C1008E3201 /* CertificatesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
+				C6F4641B266BC1C1008E3201 /* CertificatesViewModel.swift in Sources */,
 				C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */,
 				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
+				C6F46418266BBE8A008E3201 /* Certificate.swift in Sources */,
 				C6C43F45266B328B00092168 /* MainView.swift in Sources */,
 				C6C43F72266B6D2E00092168 /* ModelData.swift in Sources */,
 				C6C43F6A266B609700092168 /* PackageRow.swift in Sources */,

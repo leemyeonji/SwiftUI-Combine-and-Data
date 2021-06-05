@@ -1,0 +1,16 @@
+//
+//  Certificate.swift
+//  SwiftUICombineAndData
+//
+//  Created by 임현지 on 2021/06/05.
+//
+
+import Foundation
+
+struct Certificate: Identifiable {
+    var id: String
+    var course: String
+    var date: String
+    var logo: String
+    var instructor: String
+}
