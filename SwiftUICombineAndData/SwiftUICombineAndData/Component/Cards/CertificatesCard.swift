@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct CertificatesCard: View {
-    var certificates: Certificate
+    @EnvironmentObject var certificatesVM: CertificateViewModel
+    @Binding var selection: Int
     
     var body: some View {
         ZStack {
             Image("CertificateBackground")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-            content
+            if certificatesVM.certificates.count > 0 {
+                content
+            } else {
+                Text("No certificates")
+            }        
         }
         .frame(maxWidth: 725, maxHeight: 465)
         .background(RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.9921568627, green: 0.2470588235, blue: 0.2, alpha: 0.8)).opacity(0.8), Color(#colorLiteral(red: 0.2980392157, green: 0, blue: 0.7843137255, alpha: 0.6)).opacity(0.2)]), center: .bottomTrailing, startRadius: 5, endRadius: 900))
@@ -27,7 +32,7 @@ struct CertificatesCard: View {
     
     var content: some View {
         VStack(spacing: 20) {
-            Image(certificates.logo)
+            Image(certificatesVM.certificates[selection].logo)
                 .resizable()
                 .frame(width: 28, height: 28)
                 .padding(8)
@@ -52,7 +57,7 @@ struct CertificatesCard: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            Text("Successfully completed the online course \(certificates.course) on \(certificates.date)")
+            Text("Successfully completed the online course \(certificatesVM.certificates[selection].course) on \(certificatesVM.certificates[selection].date)")
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white.opacity(0.7))
@@ -75,20 +80,21 @@ struct CertificatesCard: View {
     var instructorRow: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Design+Code Instructor")
-            Text("\(certificates.instructor)")
+            Text("\(certificatesVM.certificates[selection].instructor)")
         }
     }
     
     var certificatesDataRow: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Certificate no: DC-\(certificates.id)")
-            Text("Certificate url: designcode.io/certificate/\(certificates.id)")
+            Text("Certificate no: DC-\(certificatesVM.certificates[selection].id)")
+            Text("Certificate url: designcode.io/certificate/\(certificatesVM.certificates[selection].id)")
         }
     }
 }
 
 struct CertificatesCard_Previews: PreviewProvider {
     static var previews: some View {
-        CertificatesCard(certificates: Certificate(id: "123456", course: "Swift UI Combine and Data", date: "June 2nd, 2021", logo: "Logo SwiftUI", instructor: "Stephanie Diep"))
+        CertificatesCard(selection: Binding.constant(0))
+            .environmentObject(CertificateViewModel())
     }
 }

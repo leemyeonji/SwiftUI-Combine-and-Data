@@ -10,15 +10,19 @@ import SwiftUI
 struct CertificatesView: View {
     
     @StateObject var certificateVM = CertificateViewModel()
+    @State private var selection: Int = 0
     
     var body: some View {
-        VStack {
-            ForEach(certificateVM.certificates, id: (\.id)) {
+        TabView(selection: $selection) {
+            ForEach(certificateVM.certificates.indices, id: (\.self)) {
                 certificate in
-                CertificatesCard(certificates: certificate)
+                CertificatesCard(selection: $selection)
+                    .padding(.horizontal, 8)
+                    .environmentObject(certificateVM)
             }
         }
         .background(AccountBackground())
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 
