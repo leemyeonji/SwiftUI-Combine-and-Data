@@ -20,7 +20,7 @@ struct CertificatesCard: View {
                 content
             } else {
                 Text("No certificates")
-            }        
+            }
         }
         .frame(maxWidth: 725, maxHeight: 465)
         .background(RadialGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.9921568627, green: 0.2470588235, blue: 0.2, alpha: 0.8)).opacity(0.8), Color(#colorLiteral(red: 0.2980392157, green: 0, blue: 0.7843137255, alpha: 0.6)).opacity(0.2)]), center: .bottomTrailing, startRadius: 5, endRadius: 900))

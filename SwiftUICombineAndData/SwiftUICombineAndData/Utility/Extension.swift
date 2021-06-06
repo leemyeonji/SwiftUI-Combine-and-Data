@@ -25,6 +25,8 @@ extension View {
         .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.white, lineWidth: 1).blendMode(.overlay))
         .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
+    
+    @ViewBuilder fuc
 }
 
 

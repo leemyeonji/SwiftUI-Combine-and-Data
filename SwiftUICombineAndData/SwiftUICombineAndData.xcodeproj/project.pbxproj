@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C64EE76B266C9B4500CC9D1D /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE76A266C9B4500CC9D1D /* CertificatesView.swift */; };
 		C64EE76E266C9D5300CC9D1D /* CertificatesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE76D266C9D5300CC9D1D /* CertificatesCard.swift */; };
+		C64EE770266CF69700CC9D1D /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE76F266CF69700CC9D1D /* NotificationRow.swift */; };
+		C64EE772266CF84C00CC9D1D /* LightModeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE771266CF84C00CC9D1D /* LightModeRow.swift */; };
 		C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */; };
 		C6C43F45266B328B00092168 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F44266B328B00092168 /* MainView.swift */; };
 		C6C43F47266B328F00092168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F46266B328F00092168 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		C64EE76A266C9B4500CC9D1D /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
 		C64EE76D266C9D5300CC9D1D /* CertificatesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesCard.swift; sourceTree = "<group>"; };
+		C64EE76F266CF69700CC9D1D /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		C64EE771266CF84C00CC9D1D /* LightModeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightModeRow.swift; sourceTree = "<group>"; };
 		C6C43F3F266B328B00092168 /* SwiftUICombineAndData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombineAndData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineAndDataApp.swift; sourceTree = "<group>"; };
 		C6C43F44266B328B00092168 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				C6C43F69266B609700092168 /* PackageRow.swift */,
 				C6C43F73266B6F7D00092168 /* FAQRow.swift */,
 				C6C43F7A266B95F000092168 /* ProfileRow.swift */,
+				C64EE76F266CF69700CC9D1D /* NotificationRow.swift */,
+				C64EE771266CF84C00CC9D1D /* LightModeRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C43F53266B343100092168 /* VisualEffectBlur.swift in Sources */,
+				C64EE770266CF69700CC9D1D /* NotificationRow.swift in Sources */,
 				C6F4641B266BC1C1008E3201 /* CertificatesViewModel.swift in Sources */,
 				C6C43F74266B6F7E00092168 /* FAQRow.swift in Sources */,
 				C6C43F57266B358F00092168 /* TrackableScrollView.swift in Sources */,
@@ -314,6 +321,7 @@
 				C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */,
 				C6C43F67266B603200092168 /* Package.swift in Sources */,
 				C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */,
+				C64EE772266CF84C00CC9D1D /* LightModeRow.swift in Sources */,
 				C64EE76E266C9D5300CC9D1D /* CertificatesCard.swift in Sources */,
 				C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */,
 				C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */,
