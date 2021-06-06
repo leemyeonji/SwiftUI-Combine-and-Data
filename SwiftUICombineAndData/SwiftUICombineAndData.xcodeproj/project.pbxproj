@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64EE76B266C9B4500CC9D1D /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE76A266C9B4500CC9D1D /* CertificatesView.swift */; };
+		C64EE76E266C9D5300CC9D1D /* CertificatesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64EE76D266C9D5300CC9D1D /* CertificatesCard.swift */; };
 		C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */; };
 		C6C43F45266B328B00092168 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F44266B328B00092168 /* MainView.swift */; };
 		C6C43F47266B328F00092168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C43F46266B328F00092168 /* Assets.xcassets */; };
@@ -28,12 +30,14 @@
 		C6C43F79266B7AD700092168 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F78266B7AD700092168 /* Extension.swift */; };
 		C6C43F7B266B95F100092168 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43F7A266B95F000092168 /* ProfileRow.swift */; };
 		C6F46414266BB68D008E3201 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6F46413266BB68D008E3201 /* FirebaseFirestore */; };
-		C6F46416266BBD37008E3201 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F46415266BBD37008E3201 /* GoogleService-Info .plist */; };
+		C6F46416266BBD37008E3201 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6F46415266BBD37008E3201 /* GoogleService-Info.plist */; };
 		C6F46418266BBE8A008E3201 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F46417266BBE8A008E3201 /* Certificate.swift */; };
 		C6F4641B266BC1C1008E3201 /* CertificatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4641A266BC1C1008E3201 /* CertificatesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C64EE76A266C9B4500CC9D1D /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
+		C64EE76D266C9D5300CC9D1D /* CertificatesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesCard.swift; sourceTree = "<group>"; };
 		C6C43F3F266B328B00092168 /* SwiftUICombineAndData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombineAndData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C43F42266B328B00092168 /* SwiftUICombineAndDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineAndDataApp.swift; sourceTree = "<group>"; };
 		C6C43F44266B328B00092168 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		C6C43F76266B793900092168 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		C6C43F78266B7AD700092168 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C6C43F7A266B95F000092168 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
-		C6F46415266BBD37008E3201 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
+		C6F46415266BBD37008E3201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6F46417266BBE8A008E3201 /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
 		C6F4641A266BC1C1008E3201 /* CertificatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C64EE76C266C9BA000CC9D1D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C64EE76D266C9D5300CC9D1D /* CertificatesCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		C6C43F36266B328B00092168 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +115,7 @@
 				C6C43F44266B328B00092168 /* MainView.swift */,
 				C6C43F46266B328F00092168 /* Assets.xcassets */,
 				C6C43F4B266B328F00092168 /* Info.plist */,
-				C6F46415266BBD37008E3201 /* GoogleService-Info .plist */,
+				C6F46415266BBD37008E3201 /* GoogleService-Info.plist */,
 				C6C43F48266B328F00092168 /* Preview Content */,
 			);
 			path = SwiftUICombineAndData;
@@ -131,6 +143,7 @@
 			children = (
 				C6C43F61266B4EAE00092168 /* FAQView.swift */,
 				C6C43F63266B4EC800092168 /* PackagesView.swift */,
+				C64EE76A266C9B4500CC9D1D /* CertificatesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 		C6C43F60266B4E7B00092168 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C64EE76C266C9BA000CC9D1D /* Cards */,
 				C6C43F75266B792400092168 /* Buttons */,
 				C6C43F5E266B4E6500092168 /* Others */,
 				C6C43F5D266B4E5D00092168 /* Rows */,
@@ -273,7 +287,7 @@
 			files = (
 				C6C43F4A266B328F00092168 /* Preview Assets.xcassets in Resources */,
 				C6C43F47266B328F00092168 /* Assets.xcassets in Resources */,
-				C6F46416266BBD37008E3201 /* GoogleService-Info .plist in Resources */,
+				C6F46416266BBD37008E3201 /* GoogleService-Info.plist in Resources */,
 				C6C43F6F266B6BB600092168 /* faqData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +314,11 @@
 				C6C43F5B266B43C500092168 /* GradientIcon.swift in Sources */,
 				C6C43F67266B603200092168 /* Package.swift in Sources */,
 				C6C43F6C266B6B6000092168 /* FAQ.swift in Sources */,
+				C64EE76E266C9D5300CC9D1D /* CertificatesCard.swift in Sources */,
 				C6C43F43266B328B00092168 /* SwiftUICombineAndDataApp.swift in Sources */,
 				C6C43F77266B793900092168 /* PrimaryButton.swift in Sources */,
 				C6C43F54266B343100092168 /* AccountBackground.swift in Sources */,
+				C64EE76B266C9B4500CC9D1D /* CertificatesView.swift in Sources */,
 				C6C43F59266B424100092168 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
